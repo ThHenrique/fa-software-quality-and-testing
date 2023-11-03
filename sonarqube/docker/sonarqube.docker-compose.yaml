@@ -38,4 +38,3 @@ networks:
   sonar:
     # Use a custom driver
     driver: sonar_network
-
