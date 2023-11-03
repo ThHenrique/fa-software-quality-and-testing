@@ -1,16 +1,15 @@
 version: "3"
 services:
   sonar-scanner:
-    image:  sonarsource/sonar-scanner-cli
+    image: sonarsource/sonar-scanner-cli
     environment:
-      SONAR_HOST_URL: <SONAR_HOST_URL>
-      SONAR_SCANNER_OPTS: -Dsonar.projectKey=<SONAR_SCANNER_OPTS>
-      SONAR_TOKEN: <SONAR_TOKEN>
+      SONAR_HOST_URL: ${SONAR_HOST_URL}
+      SONAR_SCANNER_OPTS: -Dsonar.projectKey=${SONAR_SCANNER_OPTS}
+      SONAR_TOKEN: ${SONAR_TOKEN}
     volumes:
-      - <PATH-TO-SRC>:/usr/src
+      - ${PATH-TO-SRC}:/usr/src
     networks:
-      - <SONARQUBE-NETWORK>
+      - ${SONARQUBE-NETWORK}
 networks:
   <SONARQUBE-NETWORK>:
     external: true
-
