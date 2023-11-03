@@ -1,0 +1,43 @@
+0 1 2 3 4 5 6 7 8 9 = ['zero', 'um', 'dois', 'tres', 'quarto', 'cinco', 'seis', 'sete', 'oito', 'nove']
+
+10 11 12 13 14 15 16 17 18 19 = ['dez', 'onze', 'doze', 'treze',.. 'dezenove'] é dessa forma pq a dezena é 1
+
+20 21 22 23 24 25 26 27 28 29 = ['vinte', 'vinte e um', 'vinte e dois', 'vinte e tres' ] é vinte pq a casa da dezena é 2
+
+90 91 92 93.. 99 = [noventa, noventa e um, noventa e dois, noventa e tres,... noventa e nove] = é noventa pq a dezena é 9
+
+100 101 102 103,... 109 = [cem, cento e um, cento e dois, cento e tres,... cento e nove] = é dessa forma pq a centena é 1 e soma as demais casas de unidade
+
+110 111,... 119 = [cento e dez, cento e onze, cento e dezenove] = centena + e + dezena
+
+120 121 = [cento e vinte, cento e vinte e um] = centena + e + dezena + e + unidade
+
+999 = [novecentos e noventa e nove] = centena + e + dezena + unidade
+
+1000 = mil
+
+1001 1002 1003 1004 1005 1006 1007 1008 1009 = mil e um
+
+1010 1011 = [mil e dez, mil e onze]
+
+1100 1101 =  [mil e cem, mil cento e um]
+
+1999 = [mil novecentos e noventa e nove]
+
+2000 = [dois mil] 2 + mil
+
+9999 = [nove mil novecentos e noventa e nove] unidade de milhar + e + unidade de centena + e + unidade de dezena + e + unidade
+
+10000 10001 = [dez mil, dez mil e um]
+
+10010 10011 = [dez mil e dez, dez mil e onze]
+
+10100 10101 = [dez mil e cem, dez mil cento e um]
+
+10110 10111 = [dez mil cento e dez, dez mil cento e onze]
+
+20000 = [vinte mil]
+
+99999 = noventa e nove mil novecentos e noventa e nove = dezena de milhar + e + unidade de milhar + e + centena + e + dezena + e + unidade
+
+100000 = um milhao
