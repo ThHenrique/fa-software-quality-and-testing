@@ -32,7 +32,7 @@ export class Check {
     if (decimalAmount) {
       const decimalAmountInWords = NumberInWords.transform(decimalAmount);
 
-      output += decimalAmountInWords + " " + this.getMonetaryValue(decimalAmount, true)
+      output += ` e ${decimalAmountInWords} ${this.getMonetaryValue(decimalAmount, true)}`
     }
     return output[0].toUpperCase() + output.substr(1)
   }

@@ -61,14 +61,14 @@ describe("Check Monetary Value", () => {
 })
 
 describe("DOJO TEST", () => {
-  // it('should get quinze mil quatrocentos e quinze reais e dezesseis centavos', () => {
-  //   const sut = createSut(15415.16)
+  it('should get quinze mil quatrocentos e quinze reais e dezesseis centavos', () => {
+    const sut = createSut(15415.16)
 
-  //   expect(sut.amount).not.toBe(0)
-  //   expect(sut.amount).not.toBeUndefined()
-  //   expect(sut.amount).not.toBeNull()
-  //   expect(sut.getAmountInWords()).toBe('Quinze mil quatrocentos e quinze reais e dezesseis centavos')
-  // });
+    expect(sut.amount).not.toBe(0)
+    expect(sut.amount).not.toBeUndefined()
+    expect(sut.amount).not.toBeNull()
+    expect(sut.getAmountInWords()).toBe('Quinze mil quatrocentos e quinze reais e dezesseis centavos')
+  });
 
   // it('should get cinco centavos', () => {
   //   const sut = createSut(0.05)
