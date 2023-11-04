@@ -30,77 +30,77 @@ describe('Testando a classe NumberInWords', () => {
 });
 
 describe('Número por extenso', () => {
-  // it('5 por extenso', () => {
-  //   const sut = new NumberInWords(5);
+  it('5 por extenso', () => {
+    const sut = new NumberInWords(5);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('cinco');
-  // });
+    expect(result).toBe('cinco');
+  });
 
-  // it('10 por extenso', () => {
-  //   const sut = new NumberInWords(10);
+  it('10 por extenso', () => {
+    const sut = new NumberInWords(10);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('dez');
-  // });
+    expect(result).toBe('dez');
+  });
 
-  // it('15 por extenso', () => {
-  //   const sut = new NumberInWords(15);
+  it('15 por extenso', () => {
+    const sut = new NumberInWords(15);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('quinze');
-  // });
+    expect(result).toBe('quinze');
+  });
 
-  // it('20 por extenso', () => {
-  //   const sut = new NumberInWords(20);
+  it('20 por extenso', () => {
+    const sut = new NumberInWords(20);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('vinte');
-  // });
+    expect(result).toBe('vinte');
+  });
 
-  // it('99 por extenso', () => {
-  //   const sut = new NumberInWords(99);
+  it('99 por extenso', () => {
+    const sut = new NumberInWords(99);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('noventa e nove');
-  // });
+    expect(result).toBe('noventa e nove');
+  });
 
-  // it('100 por extenso', () => {
-  //   const sut = new NumberInWords(100);
+  it('100 por extenso', () => {
+    const sut = new NumberInWords(100);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('cem');
-  // });
+    expect(result).toBe('cem');
+  });
 
-  // it('101 por extenso', () => {
-  //   const sut = new NumberInWords(101);
+  it('101 por extenso', () => {
+    const sut = new NumberInWords(101);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('cento e um');
-  // });
+    expect(result).toBe('cento e um');
+  });
 
-  // it('110 por extenso', () => {
-  //   const sut = new NumberInWords(110);
+  it('110 por extenso', () => {
+    const sut = new NumberInWords(110);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('cento e dez');
-  // });
+    expect(result).toBe('cento e dez');
+  });
 
-  // it('999 por extenso', () => {
-  //   const sut = new NumberInWords(999);
+  it('999 por extenso', () => {
+    const sut = new NumberInWords(999);
 
-  //   const result = sut.transform();
+    const result = sut.transform();
 
-  //   expect(result).toBe('novecentos e noventa e nove');
-  // });
+    expect(result).toBe('novecentos e noventa e nove');
+  });
 
   it('1000 por extenso', () => {
     const sut = new NumberInWords(1000);
