@@ -22,14 +22,23 @@ export class Check {
     }
   }
 
-
   getAmountInWords() {
-    const numberInWords = new NumberInWords(this.amount)
+    const decimalAmount = NumberInWords.getDecimalNumber(this.amount)
+    const amountInt = Math.floor(this.amount)
 
-    const numberTransform = numberInWords.transform();
+    const amountIntTransform = NumberInWords.transform(amountInt);
 
-    const monetaryValue = 'reais'
+    let output = amountIntTransform + " " + this.getMonetaryValue(amountInt)
+    if (decimalAmount) {
+      const decimalAmountInWords = NumberInWords.transform(decimalAmount);
 
-    return `${numberTransform} ${monetaryValue}`
+      let decimalAmountOutput = `${decimalAmountInWords} ${this.getMonetaryValue(decimalAmount, true)}`
+      if (amountInt == 0) {
+        output = decimalAmountOutput
+      } else {
+        output += ` e ${decimalAmountOutput}`
+      }
+    }
+    return output[0].toUpperCase() + output.substr(1)
   }
 }
