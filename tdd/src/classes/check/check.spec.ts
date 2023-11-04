@@ -105,4 +105,22 @@ describe("DOJO TEST", () => {
 
     expect(sut.getAmountInWords()).toBe('Dois reais e vinte e cinco centavos')
   });
+
+  it('should quatro mil quinhentos e oitenta e seis', () => {
+    const sut = createSut(4586)
+
+    expect(sut.getAmountInWords()).toBe('Quatro mil quinhentos e oitenta e seis reais')
+  });
+
+  it('should um milhão oitocentos e cinquenta e dois mil e setecentos reaiss', () => {
+    const sut = createSut(1852700)
+
+    expect(sut.getAmountInWords()).toBe('Um milhão oitocentos e cinquenta e dois mil e setecentos reais')
+  });
+
+  it('should mil quatrocentos e oitenta e quatro reais e vinte centavos', () => {
+    const sut = createSut(1484.20)
+
+    expect(sut.getAmountInWords()).toBe('Mil quatrocentos e oitenta e quatro reais e vinte centavos')
+  });
 })
