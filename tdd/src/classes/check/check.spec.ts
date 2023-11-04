@@ -58,6 +58,30 @@ describe("Check Monetary Value", () => {
 
     expect(monetaryValue).toBe('real')
   });
+
+  it('should um centavo', () => {
+    const sut = createSut(0.01)
+
+    expect(sut.getAmountInWords()).toBe('Um centavo')
+  });
+
+  it('should dez centavos', () => {
+    const sut = createSut(0.10)
+
+    expect(sut.getAmountInWords()).toBe('Dez centavos')
+  });
+
+  it('should Um real e um centavo', () => {
+    const sut = createSut(1.01)
+
+    expect(sut.getAmountInWords()).toBe('Um real e um centavo')
+  });
+
+  it('should mil reais e um centavo', () => {
+    const sut = createSut(1000.01)
+
+    expect(sut.getAmountInWords()).toBe('Mil reais e um centavo')
+  });
 })
 
 describe("DOJO TEST", () => {
@@ -70,15 +94,15 @@ describe("DOJO TEST", () => {
     expect(sut.getAmountInWords()).toBe('Quinze mil quatrocentos e quinze reais e dezesseis centavos')
   });
 
-  // it('should get cinco centavos', () => {
-  //   const sut = createSut(0.05)
+  it('should get cinco centavos', () => {
+    const sut = createSut(0.05)
 
-  //   expect(sut.getAmountInWords()).toBe('should Cinco centavos')
-  // });
+    expect(sut.getAmountInWords()).toBe('Cinco centavos')
+  });
 
-  // it('should dois reais e vinte e cinco centavos', () => {
-  //   const sut = createSut(2.25)
+  it('should dois reais e vinte e cinco centavos', () => {
+    const sut = createSut(2.25)
 
-  //   expect(sut.getAmountInWords()).toBe('Dois reais e vinte e cinco centavos')
-  // });
+    expect(sut.getAmountInWords()).toBe('Dois reais e vinte e cinco centavos')
+  });
 })
